@@ -4,7 +4,7 @@ A standalone executable for Entra ID Privileged Identity Management (PIM) role a
 
 ## Overview
 
-This project creates a single-file executable (`PIM-Global.exe`) that:
+This project creates a single-file executable (`PIM-Global-MST.exe`) that:
 - Embeds the PowerShell script and MSAL.NET DLLs as resources
 - Extracts everything to a temporary directory at runtime
 - Launches PowerShell 7+ with the script
