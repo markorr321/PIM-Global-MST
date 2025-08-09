@@ -50,7 +50,7 @@ dotnet publish -c Release -r win-x64 --self-contained true -o .\out
 
 The build creates a single executable at:
 ```
-.\out\PIM-Global.exe
+.\out\PIM-Global-MST.exe
 ```
 
 This EXE file:
