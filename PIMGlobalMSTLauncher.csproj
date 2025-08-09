@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <PublishTrimmed>false</PublishTrimmed>
+    <AssemblyName>PIM-Global-MST</AssemblyName>
+    <RootNamespace>PIMGlobalMSTLauncher</RootNamespace>
+    <ApplicationIcon>PIM.ico</ApplicationIcon>
+    <PublishDir>.\out</PublishDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="PIM-Global-Teams-v2.ps1" />
+    <EmbeddedResource Include="MSAL\netstandard2.0\Microsoft.Identity.Client.dll" />
+    <EmbeddedResource Include="MSAL\netstandard2.0\Microsoft.IdentityModel.Abstractions.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="PIM.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
+  </ItemGroup>
+
+</Project> 
