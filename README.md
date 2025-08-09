@@ -1,4 +1,4 @@
-# PIM-Global Single-File Executable
+# PIM-Global Single-File Executable with Microsoft Teams approval workflow!
 
 A standalone executable for Entra ID Privileged Identity Management (PIM) role activation with enforced MFA.
 
