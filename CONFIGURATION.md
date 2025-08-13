@@ -155,7 +155,7 @@ Power Automate integration enables automated approval workflows and enhanced not
 You can view the sanitized example flow here:  
 [📂 PIM Role Approval Process Flow](./PIMRoleApprovalProcessFlow/)
 
-This can be imported and has a careful configuration guide included!
+This can be imported and has a careful developer guide included!
 
 ### Step 1: Create Power Automate Flow
 
