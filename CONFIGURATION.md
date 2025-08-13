@@ -152,6 +152,11 @@ Power Automate integration enables automated approval workflows and enhanced not
 
 > **⚡ Important**: Power Automate workflows require a **Power Automate Premium** license or **Power Platform** subscription to function properly.
 
+You can view the sanitized example flow here:  
+[📂 PIM Role Approval Process Flow](./PIMRoleApprovalProcessFlow/)
+
+This can be imported and has a careful configuration guide included!
+
 ### Step 1: Create Power Automate Flow
 
 #### **Flow Type: Instant Cloud Flow**
