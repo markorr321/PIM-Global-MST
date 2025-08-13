@@ -236,7 +236,7 @@ This tool implements enterprise-grade security:
 - Color-coded console output for better readability
 - Comprehensive error messages with suggested solutions
 - Graceful fallback when Teams integration isn't configured
-- Real-time API synchronization with Azure PIM
+- Real-time API synchronization with Entra ID PIM
 
 ---
 
@@ -253,7 +253,7 @@ This tool implements enterprise-grade security:
 - The tool checks common installation paths automatically
 
 **No eligible roles found**
-- Verify you have PIM role assignments in Azure Portal → PIM → My Roles
+- Verify you have PIM role assignments in Entra ID → PIM → My Roles
 - Check that roles aren't already active
 
 📖 **[Full Troubleshooting Guide](CONFIGURATION.md#troubleshooting)**
