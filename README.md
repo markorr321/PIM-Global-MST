@@ -87,16 +87,17 @@ The tool automatically installs required PowerShell modules:
 
 ### **Option B** — Run PowerShell Script Directly
 
-**Run once via GitHub:**
-```powershell
-iex "& { $(irm https://raw.githubusercontent.com/markorr321/PIM-Global-MST/main/PIM-Global-Teams-v2.ps1) }"
-```
-
-**Clone and run locally:**
+**Clone and run locally (Recommended):**
 ```bash
 git clone https://github.com/markorr321/PIM-Global-MST.git
 cd PIM-Global-MST
 .\PIM-Global-Teams-v2.ps1
+```
+
+**Quick Start Script:**
+```powershell
+# One-line installer and runner
+irm https://github.com/markorr321/PIM-Global-MST/raw/main/install.ps1 | iex
 ```
 
 ---
