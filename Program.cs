@@ -27,14 +27,14 @@ namespace PIMGlobalLauncher
                 Directory.CreateDirectory(tempDir);
 
                 // Extract embedded resources silently
-                ExtractResource("PIMGlobalLauncher.PIM-Global-V2.ps1", Path.Combine(tempDir, "PIM-Global-V2.ps1"));
+                ExtractResource("PIMGlobalMSTLauncher.PIM-Global-Teams-v2.ps1", Path.Combine(tempDir, "PIM-Global-Teams-v2.ps1"));
                 
                 string msalDir = Path.Combine(tempDir, "MSAL", "netstandard2.0");
                 Directory.CreateDirectory(msalDir);
-                ExtractResource("PIMGlobalLauncher.MSAL.netstandard2._0.Microsoft.Identity.Client.dll", 
+                ExtractResource("PIMGlobalMSTLauncher.MSAL.netstandard2._0.Microsoft.Identity.Client.dll", 
                                Path.Combine(msalDir, "Microsoft.Identity.Client.dll"));
-                ExtractResource("PIMGlobalLauncher.MSAL.netstandard2._0.Microsoft.IdentityModel.Abstractions.dll", 
-                               Path.Combine(msalDir, "Microsoft.Identity.Model.Abstractions.dll"));
+                ExtractResource("PIMGlobalMSTLauncher.MSAL.netstandard2._0.Microsoft.IdentityModel.Abstractions.dll", 
+                               Path.Combine(msalDir, "Microsoft.IdentityModel.Abstractions.dll"));
 
                 // Find PowerShell 7+ (pwsh.exe)
                 string pwshPath = FindPowerShell7();
@@ -51,7 +51,7 @@ namespace PIMGlobalLauncher
                 var startInfo = new ProcessStartInfo
                 {
                     FileName = pwshPath,
-                    Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{Path.Combine(tempDir, "PIM-Global-V2.ps1")}\"",
+                    Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{Path.Combine(tempDir, "PIM-Global-Teams-v2.ps1")}\"",
                     WorkingDirectory = tempDir,
                     UseShellExecute = false,
                     CreateNoWindow = false,

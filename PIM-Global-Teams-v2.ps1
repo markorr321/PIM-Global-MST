@@ -33,6 +33,28 @@
        - Adaptive Cards Schema: http://adaptivecards.io/schemas/adaptive-card.json
 #>
 
+# ========================= PIM-Global Branding Header =========================
+Clear-Host
+Write-Host "[ P I M - G L O B A L ]" -ForegroundColor DarkMagenta
+Write-Host "PIM-Global - Automate PIM Role Activation Application via Microsoft Entra ID" -ForegroundColor Green
+Write-Host "Made by Mark Orr with " -NoNewline -ForegroundColor White
+Write-Host "☕ 3 cups of coffee " -NoNewline -ForegroundColor Yellow
+Write-Host "and " -NoNewline -ForegroundColor White
+Write-Host "🥤 6 diet cokes! " -NoNewline -ForegroundColor Red
+Write-Host "Dedicated to Courtney and Aubrey" -ForegroundColor Magenta
+Write-Host "Version 3.0.0 | Release: 08.13.2025" -ForegroundColor Gray
+Write-Host ""
+Write-Host "This is a private version of the application. Feedback welcome at:" -ForegroundColor Yellow
+Write-Host "Issues: " -NoNewline -ForegroundColor White
+Write-Host "https://github.com/markorr321/PIM-Global-MST/issues" -ForegroundColor Blue
+Write-Host ""
+Write-Host "Love this tool? Consider sponsoring development:" -ForegroundColor White
+Write-Host "GitHub: " -NoNewline -ForegroundColor White
+Write-Host "https://github.com/sponsors/markorr321" -ForegroundColor Blue
+Write-Host "Development opportunities: " -NoNewline -ForegroundColor White
+Write-Host "morr@orr365.tech" -ForegroundColor Cyan
+Start-Sleep -Seconds 3
+
 # ========================= Module Dependencies =========================
 $ErrorActionPreference = "SilentlyContinue"
 
@@ -174,7 +196,7 @@ function Send-TeamsNotification {
         $response = Invoke-RestMethod -Uri $teamsWebhookUrl -Method Post -ContentType 'application/json' -Body $jsonCard
         return $true
     } catch {
-        Write-Host "⚠️ Failed to send Teams notification: $($_.Exception.Message)" -ForegroundColor Yellow
+        Write-Host "⚠️ Teams workflow not configured - continuing without notifications" -ForegroundColor Yellow
         return $false
     }
 }
@@ -214,8 +236,7 @@ function Send-PowerAutomateApproval {
         $response = Invoke-RestMethod -Uri $powerAutomateApprovalUrl -Method Post -Body $jsonBody -ContentType "application/json"
         return $true
     } catch {
-        Write-Host "❌ Failed to send Power Automate approval: $($_.Exception.Message)" -ForegroundColor Red
-        Write-Host "   Check that the Power Automate URL is correct" -ForegroundColor Yellow
+        Write-Host "⚠️ Power Automate workflow not configured - continuing without approval automation" -ForegroundColor Yellow
         return $false
     }
 }
@@ -254,8 +275,7 @@ function Send-BatchedPowerAutomateApproval {
         $response = Invoke-RestMethod -Uri $powerAutomateApprovalUrl -Method Post -Body $jsonBody -ContentType "application/json"
         return $true
     } catch {
-        Write-Host "❌ Failed to send batched Power Automate approval: $($_.Exception.Message)" -ForegroundColor Red
-        Write-Host "   Check that the Power Automate URL is correct" -ForegroundColor Yellow
+        Write-Host "⚠️ Power Automate workflow not configured - continuing without approval automation" -ForegroundColor Yellow
         return $false
     }
 }
@@ -406,7 +426,7 @@ function Send-ApprovalRequiredNotification {
         Write-Host "   Approvers will receive Azure PIM email and can click the Teams card to access the portal" -ForegroundColor Gray
         return $true
     } catch {
-        Write-Host "❌ Failed to send approval notification: $($_.Exception.Message)" -ForegroundColor Red
+        Write-Host "⚠️ Teams approval workflow not configured - continuing without notifications" -ForegroundColor Yellow
         return $false
     }
 }
