@@ -52,7 +52,7 @@
 
 #### **Step 1: Download and Extract**
 1. Download `PIM-Global-MST.exe` from the [releases page](https://github.com/markorr321/PIM-Global-MST/releases)
-2. Place the executable in a folder of your choice
+2. Place the executable in a folder of your choice or pin it to your taskbar for daily use!
 3. No installation required - it's a portable executable
 
 #### **Step 2: Basic Configuration (Required)**
