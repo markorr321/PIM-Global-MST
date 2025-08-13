@@ -1,7 +1,7 @@
 # PIM Role Approval Process Flow - Developer Setup Guide
 
 ## Overview
-This Power Automate flow provides an automated approval workflow for Privileged Identity Management (PIM) role activations in Microsoft Entra ID (Azure AD). When imported into your tenant, several configuration updates are required to make it functional.
+This Power Automate flow provides an automated approval workflow for Privileged Identity Management (PIM) role activations in Microsoft Entra ID. When imported into your tenant, several configuration updates are required to make it functional.
 
 ## Prerequisites
 - **Microsoft Entra ID P2 license** (required for PIM functionality)
