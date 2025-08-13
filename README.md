@@ -27,6 +27,7 @@ PIM-Global-MST is a lightweight, secure desktop utility designed to streamline E
 * ⚡ **Multi-role operations** — activate or deactivate multiple roles simultaneously
 * 🔄 **Interactive session mode** — multiple operations without re-authentication
 * 🎨 **Color-coded output** — enhanced visual feedback and error handling
+* 🛑 **Smart deactivation workflow** — safely deactivate roles with justification tracking
 
 ### **Microsoft Teams Integration**
 * 📱 **Rich adaptive cards** for role activation notifications
@@ -131,6 +132,50 @@ cd PIM-Global-MST
 
 ### 🖥️ Script Interaction
 ![Manual Script Interaction](images/PIM%20-%20Manual%20Script%20Interaction.png)
+
+---
+
+## 🛑 Deactivation Workflow
+
+### **Intelligent Role Deactivation**
+PIM-Global-MST automatically detects active roles and provides a streamlined deactivation process:
+
+### **Key Features**
+- **🔍 Active Role Detection** - Automatically scans and identifies currently active PIM roles
+- **📋 Bulk Deactivation** - Deactivate multiple active roles simultaneously  
+- **📝 Justification Tracking** - Required justification for all deactivation actions
+- **📱 Teams Notifications** - Sends deactivation notifications to configured Teams channels
+- **🔄 Session Continuity** - Deactivate roles without re-authentication in the same session
+- **⚡ Smart Filtering** - Only shows roles that can be deactivated (excludes permanent assignments)
+
+### **Deactivation Process**
+1. **Launch the tool** - Run `PIM-Global-MST.exe` or the PowerShell script
+2. **Authentication** - Complete MFA authentication (one-time per session)
+3. **Active Role Detection** - Tool automatically scans for active PIM role assignments
+4. **Role Selection** - Choose which active roles to deactivate (supports multi-select)
+5. **Justification** - Provide reason for deactivation (required for audit compliance)
+6. **Confirmation** - Review selections and confirm deactivation
+7. **Teams Notification** - Automatic notification sent to configured Teams channels
+
+### **Deactivation Workflow Benefits**
+- **🛡️ Security Compliance** - Ensures roles are deactivated when no longer needed
+- **📊 Audit Trail** - Complete justification and timestamp logging
+- **⏱️ Time Savings** - Bulk operations reduce administrative overhead  
+- **🔔 Transparency** - Teams notifications keep stakeholders informed
+- **🎯 Precision** - Only shows roles that can actually be deactivated
+
+### **Example Deactivation Scenario**
+```
+🔍 Detected Active Roles:
+[1] Global Administrator (Expires: 2025-01-15 3:00 PM)
+[2] Security Administrator (Expires: 2025-01-15 5:30 PM)
+[3] User Administrator (Expires: 2025-01-15 4:15 PM)
+
+Selection: 1,3
+Justification: Project completed - no longer need elevated access
+✅ Successfully deactivated 2 roles
+📱 Teams notification sent to #pim-notifications
+```
 
 ---
 
