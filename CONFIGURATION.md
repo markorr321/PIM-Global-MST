@@ -147,6 +147,12 @@ If you have the source code:
 
 ## Power Automate Workflow Configuration
 
+### Note
+
+For automated authentication management tasks, you must create a dedicated Power Automate service account and assign it the Privileged Authentication Administrator role in Entra ID. This ensures the account can manage authentication methods, configure passwordless sign-in, and reset strong authentication credentials where required.
+
+As part of security governance, the service account must also be added as an approver for the Privileged Authentication Administrator role within the Entra ID Privileged Identity Management (PIM) configuration for each role. This allows the service account to both perform its automation functions and approve eligible activations of the role, ensuring controlled and auditable access to sensitive authentication operations.
+
 ### Overview
 Power Automate integration enables automated approval workflows and enhanced notifications for PIM role requests.
 
