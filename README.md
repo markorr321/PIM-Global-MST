@@ -197,47 +197,83 @@ This workflow leverages **Teams channels**, **Adaptive Cards**, and built-in app
 
 ## 🛑 Deactivation Workflow
 
-### **Intelligent Role Deactivation**
-PIM-Global-MST automatically detects active roles and provides a streamlined deactivation process:
+### 🛡️ Why Prompt Deactivation Matters
+As administrators, our privileged accounts grant elevated access to critical systems, sensitive data, and high-impact configurations.  
+Leaving these roles active after completing a task — or while not actively engaged — increases the **attack surface** for malicious actors.  
 
-### **Key Features**
-- **🔍 Active Role Detection** - Automatically scans and identifies currently active PIM roles
-- **📋 Bulk Deactivation** - Deactivate multiple active roles simultaneously  
-- **📝 Justification Tracking** - Required justification for all deactivation actions
-- **📱 Teams Notifications** - Sends deactivation notifications to configured Teams channels
-- **🔄 Session Continuity** - Deactivate roles without re-authentication in the same session
-- **⚡ Smart Filtering** - Only shows roles that can be deactivated (excludes permanent assignments)
+By **promptly deactivating** elevated roles:  
+- **🔒 Reduce Risk Exposure** – Limit the time window in which credentials could be exploited if compromised.  
+- **📉 Minimize Insider Threat Potential** – Prevent accidental or unauthorized changes during idle periods.  
+- **📊 Strengthen Audit Readiness** – Demonstrate adherence to least privilege and just-in-time access principles.  
+- **⚡ Improve Operational Discipline** – Encourage a culture where elevated access is temporary, purposeful, and monitored.  
 
-### **Deactivation Process**
-1. **Launch the tool** - Run `PIM-Global-MST.exe` or the PowerShell script
-2. **Authentication** - Complete MFA authentication (one-time per session)
-3. **Active Role Detection** - Tool automatically scans for active PIM role assignments
-4. **Role Selection** - Choose which active roles to deactivate (supports multi-select)
-5. **Justification** - Provide reason for deactivation (required for audit compliance)
-6. **Confirmation** - Review selections and confirm deactivation
-7. **Teams Notification** - Automatic notification sent to configured Teams channels
-
-### **Deactivation Workflow Benefits**
-- **🛡️ Security Compliance** - Ensures roles are deactivated when no longer needed
-- **📊 Audit Trail** - Complete justification and timestamp logging
-- **⏱️ Time Savings** - Bulk operations reduce administrative overhead  
-- **🔔 Transparency** - Teams notifications keep stakeholders informed
-- **🎯 Precision** - Only shows roles that can actually be deactivated
-
-### **Example Deactivation Scenario**
-```
-🔍 Detected Active Roles:
-[1] Global Administrator (Expires: 2025-01-15 3:00 PM)
-[2] Security Administrator (Expires: 2025-01-15 5:30 PM)
-[3] User Administrator (Expires: 2025-01-15 4:15 PM)
-
-Selection: 1,3
-Justification: Project completed - no longer need elevated access
-✅ Successfully deactivated 2 roles
-📱 Teams notification sent to #pim-notifications
-```
+This proactive approach directly improves your organization’s **security posture** while ensuring compliance with modern **identity governance best practices**.
 
 ---
+
+### **Intelligent Role Deactivation**
+PIM-Global-MST automatically detects active roles and provides a streamlined deactivation process.
+
+---
+
+### **Key Features**
+- **🔍 Active Role Detection** - Automatically scans and identifies currently active PIM roles.
+- **📋 Bulk Deactivation** - Deactivate multiple active roles simultaneously.  
+- **📝 Justification Tracking** - Required justification for all deactivation actions.
+- **📱 Teams Notifications** - Sends deactivation notifications to configured Teams channels.
+- **🔄 Session Continuity** - Deactivate roles without re-authentication in the same session.
+- **⚡ Smart Filtering** - Only shows roles that can be deactivated (excludes permanent assignments).
+
+---
+
+### **Deactivation Process**
+
+#### 1️⃣ Account Selection
+![Account Selection](images/PIM-MST-Images/Deactivation%20Workflow/Dactivation%20Step%201%20-%20Account%20Selection.png)
+
+#### 2️⃣ Passkey Sign-In
+![Passkey Sign-In](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%202%20-%20Passkey%20Sigin.png)
+
+#### 3️⃣ QR Code Verification
+![QR Code Verification](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%203%20-%20QR%20Code%20Selection.png)
+
+#### 4️⃣ Device Connection
+![Device Connection](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%204%20-%20Device%20Connection.png)
+
+#### 5️⃣ Active Role Retrieval
+![Active Role Retrieval](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%205%20-%20Active%20Role%20Retrieval.png)
+
+#### 6️⃣ Confirm Deactivation Prompt
+![Confirm Deactivation Prompt](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%206%20-%20Enter%20Yes.png)
+
+#### 7️⃣ Role Selection
+![Role Selection](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%207%20-%20Role%20Selection.png)
+
+#### 8️⃣ Enter Justification
+![Enter Justification](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%208%20-%20Enter%20Justification.png)
+
+#### 9️⃣ Deactivate Roles
+![Deactivate Roles](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%209%20-%20Deactivate%20the%20Roles.png)
+
+#### 🔟 Role Management
+![Role Management](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%2010%20-%20Role%20Management.png)
+
+#### 1️⃣1️⃣ Close the Application
+![Close the Application](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%2011%20-%20Close%20the%20Application.png)
+
+---
+
+### **Deactivation Workflow Benefits**
+- **🛡️ Security Compliance** - Ensures roles are deactivated when no longer needed.
+- **📊 Audit Trail** - Complete justification and timestamp logging.
+- **⏱️ Time Savings** - Bulk operations reduce administrative overhead.  
+- **🔔 Transparency** - Teams notifications keep stakeholders informed.
+- **🎯 Precision** - Only shows roles that can actually be deactivated.
+
+---
+
+### **Example Deactivation Scenario**
+
 
 ## 🔧 Configuration
 
