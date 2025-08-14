@@ -167,7 +167,7 @@ This can be imported and has a careful developer guide included!
 
 ### App Registration Requirements
 
-## Microsoft Graph permissions
+### Microsoft Graph permissions
 
 > These are the configured API permissions for the app.
 
