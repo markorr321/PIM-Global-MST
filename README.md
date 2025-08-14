@@ -105,34 +105,62 @@ irm https://github.com/markorr321/PIM-Global-MST/raw/main/install.ps1 | iex
 ## 🧠 Example Workflow
 
 ### 🟢 Launch the Tool
-![PIM Global Branding](images/PIM-Final.png)
+
+---
 
 ### 👤 Account Selection
-![Account Selection](images/PIM%20-%20Account%20Selection.png)
+![Account Selection](images/PIM-MST-Images/Step%201%20-%20Accout%20Selection.png)
+
+---
 
 ### 🔑 Passkey Authentication
-![Device Selection](images/PIM%20-%20Device%20Selection.png)
+![Passkey Authentication](images/PIM-MST-Images/Step%202%20-%20Passkey%20Selection.png)
+
+---
 
 ### 📷 QR Code Verification
-![QR Code Verification](images/PIM%20-%20QR%20Code%20Verification.png)
+![QR Code Verification](images/PIM-MST-Images/Step%203%20-%20QR%20Code%20Capture.png)
+
+---
 
 ### ✅ MFA Confirmation
-![Final MFA](images/PIM%20-%20Final%20MFA.png)
+![MFA Confirmation](images/PIM-MST-Images/Step%204%20-%20Device%20Connection%20Notification.png)
+
+---
 
 ### 🎭 Role Selection
-![Role Selection](images/PIM%20-%20Role%20Selection.png)
+![Role Selection](images/PIM-MST-Images/Step%205%20-%20Role%20Selection.png)
+
+---
 
 ### 🧾 Role Configuration
-![Enter Role Number](images/PIM%20-%20Enter%20Role%20Number.png)
+![Role Configuration](images/PIM-MST-Images/Step%206%20-%20Enter%20the%20Selected%20Roles.png)
+
+---
 
 ### ⏳ Duration Selection
-![Enter Activation Duration](images/PIM%20-%20Enter%20Activation%20Duration.png)
+![Duration Selection](images/PIM-MST-Images/Step%207%20-%20Enter%20Duration.png)
+
+---
 
 ### 📝 Justification
-![Enter Reason](images/PIM%20-%20Enter%20reason%20for%20activation.png)
+![Justification](images/PIM-MST-Images/Step%208%20-%20Justification.png)
 
-### 🖥️ Script Interaction
-![Manual Script Interaction](images/PIM%20-%20Manual%20Script%20Interaction.png)
+---
+
+### 🖥️ Role Activation Request Submitted!
+![Role Activation Request Submitted](images/PIM-MST-Images/Step%209%20-%20Request%20Submitted.png)
+
+---
+
+## ➕ Additional Activations
+![Additional Activations](images/PIM-MST-Images/Step%2010%20-%20Additonal%20Activation.png)
+
+---
+
+## 🚪 Exit the Application
+![Exit the Application](images/PIM-MST-Images/Step%2011%20-%20Exit%20Terminal.png)
+
 
 ---
 
