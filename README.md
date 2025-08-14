@@ -220,7 +220,6 @@ PIM-Global-MST automatically detects active roles and provides a streamlined dea
 - **🔍 Active Role Detection** - Automatically scans and identifies currently active PIM roles.
 - **📋 Bulk Deactivation** - Deactivate multiple active roles simultaneously.  
 - **📝 Justification Tracking** - Required justification for all deactivation actions.
-- **📱 Teams Notifications** - Sends deactivation notifications to configured Teams channels.
 - **🔄 Session Continuity** - Deactivate roles without re-authentication in the same session.
 - **⚡ Smart Filtering** - Only shows roles that can be deactivated (excludes permanent assignments).
 
