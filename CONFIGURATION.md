@@ -165,6 +165,27 @@ You can view the sanitized example flow here:
 
 This can be imported and has a careful developer guide included!
 
+### App Registration Requirements
+
+## Microsoft Graph permissions
+
+> These are the configured API permissions for the app.
+
+| API              | Permission                           | Type         | Description                                         | Admin consent required |
+|------------------|--------------------------------------|--------------|-----------------------------------------------------|------------------------|
+| Microsoft Graph  | `Directory.ReadWrite.All`            | Application  | Read and write directory data                       | Yes |
+| Microsoft Graph  | `PrivilegedAccess.Read.AzureAD`      | Delegated    | Read privileged access to Azure AD                  | Yes |
+| Microsoft Graph  | `PrivilegedAccess.Read.AzureAD`      | Application  | Read privileged access to Azure AD roles            | Yes |
+| Microsoft Graph  | `PrivilegedAccess.Read.AzureADGroup` | Delegated    | Read privileged access to Azure AD groups           | Yes |
+| Microsoft Graph  | `PrivilegedAccess.Read.AzureADGroup` | Application  | Read privileged access to Azure AD groups           | Yes |
+| Microsoft Graph  | `PrivilegedAccess.ReadWrite.AzureAD` | Delegated    | Read and write privileged access to Azure AD        | Yes |
+| Microsoft Graph  | `PrivilegedAccess.ReadWrite.AzureAD` | Application  | Read and write privileged access to Azure AD roles  | Yes |
+| Microsoft Graph  | `PrivilegedAccess.ReadWrite.AzureADGroup` | Delegated | Read and write privileged access to Azure AD groups | Yes |
+| Microsoft Graph  | `PrivilegedAccess.ReadWrite.AzureADGroup` | Application | Read and write privileged access to Azure AD groups | Yes |
+| Microsoft Graph  | `RoleManagement.ReadWrite.Directory` | Application  | Read and write all directory RBAC settings          | Yes |
+| Microsoft Graph  | `User.Read`                          | Delegated    | Sign in and read user profile                       | No |
+
+
 ### Step 1: Create Power Automate Flow
 
 #### **Flow Type: Instant Cloud Flow**
