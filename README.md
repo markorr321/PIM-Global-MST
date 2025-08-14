@@ -266,13 +266,9 @@ PIM-Global-MST automatically detects active roles and provides a streamlined dea
 - **🛡️ Security Compliance** - Ensures roles are deactivated when no longer needed.
 - **📊 Audit Trail** - Complete justification and timestamp logging.
 - **⏱️ Time Savings** - Bulk operations reduce administrative overhead.  
-- **🔔 Transparency** - Teams notifications keep stakeholders informed.
 - **🎯 Precision** - Only shows roles that can actually be deactivated.
 
 ---
-
-### **Example Deactivation Scenario**
-
 
 ## 🔧 Configuration
 
