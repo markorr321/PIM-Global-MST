@@ -164,6 +164,37 @@ irm https://github.com/markorr321/PIM-Global-MST/raw/main/install.ps1 | iex
 
 ---
 
+## 📩 Microsoft Teams Approval Workflow
+
+In addition to the in-terminal role activation process, requests can also be handled through Microsoft Teams for a more collaborative and transparent approval process.  
+This workflow leverages **Teams channels**, **Adaptive Cards**, and built-in approval notifications to streamline role activation, making it easy for managers and requestors to track the status without leaving Teams.
+
+---
+
+### 🗂️ Navigate to the Channel
+![Navigate to the Channel](images/PIM-MST-Images/Approval%20Step%201.png)
+
+---
+
+### 📝 Adaptive Card Example
+![Adaptive Card Example](images/PIM-MST-Images/Approval%20Step%202.png)
+
+---
+
+### ✍️ Enter the Approval Notification
+![Enter the Approval Notification](images/PIM-MST-Images/Approval%20Step%203.png)
+
+---
+
+### 📌 Posted for Approval (Cannot Be Modified)
+![Posted for Approval](images/PIM-MST-Images/Approval%20Step%204.png)
+
+---
+
+### 🔔 Notification for the Requestor
+![Notification for the Requestor](images/PIM-MST-Images/Approval%20Step%205.png)
+
+
 ## 🛑 Deactivation Workflow
 
 ### **Intelligent Role Deactivation**
