@@ -24,7 +24,7 @@
 - 🔄 **Interactive session mode**: Perform multiple operations without re-authentication
 - 🎨 **Color-coded output**: Enhanced visual feedback for better user experience
 - 🛡️ **Improved error handling**: Comprehensive error messages and graceful failure recovery
-- 🔄 **Real-time API sync**: Live synchronization with Azure AD PIM APIs
+- 🔄 **Real-time API sync**: Live synchronization with Entra ID PIM APIs
 
 ### **Script Evolution**
 - 🆕 **PIM-Global-Teams-v2.ps1**: Latest version with full Teams integration and advanced features
@@ -41,7 +41,7 @@
 - ✅ **PowerShell 7+** - [Download here](https://github.com/PowerShell/PowerShell/releases)
 - ✅ **Entra ID Premium P2** license (for PIM functionality)
 - ✅ **Internet connectivity** for Microsoft Graph API calls
-- ✅ **Eligible PIM roles** in your Azure AD tenant
+- ✅ **Eligible PIM roles** in Entra ID.
 
 #### **Optional Requirements (for Teams integration)**
 - 🔹 **Microsoft Teams** access
@@ -147,10 +147,44 @@ If you have the source code:
 
 ## Power Automate Workflow Configuration
 
+### Note
+
+For automated authentication management tasks in Entra ID, you must create a dedicated Power Automate service account and assign it the Privileged Authentication Administrator role. This role enables the account to manage authentication methods, configure passwordless sign-in, and reset strong authentication credentials as needed.
+
+As part of security governance, the service account must also be added as an approver for the Privileged Authentication Administrator role within the Entra ID Privileged Identity Management (PIM) configuration. This ensures the account can both execute its automation tasks and approve eligible activations of the role, providing controlled and auditable access to sensitive authentication operations.
+
+To strengthen security, use a hardened, Entra ID–specific account with phishing-resistant MFA enforced through an authentication strength policy.
+
 ### Overview
 Power Automate integration enables automated approval workflows and enhanced notifications for PIM role requests.
 
 > **⚡ Important**: Power Automate workflows require a **Power Automate Premium** license or **Power Platform** subscription to function properly.
+
+You can view the sanitized example flow here:  
+[📂 PIM Role Approval Process Flow](./PIMRoleApprovalProcessFlow/)
+
+This can be imported and has a careful developer guide included!
+
+### App Registration Requirements
+
+### Microsoft Graph permissions
+
+> These are the configured API permissions for the app.
+
+| API              | Permission                           | Type         | Description                                         | Admin consent required |
+|------------------|--------------------------------------|--------------|-----------------------------------------------------|------------------------|
+| Microsoft Graph  | `Directory.ReadWrite.All`            | Application  | Read and write directory data                       | Yes |
+| Microsoft Graph  | `PrivilegedAccess.Read.AzureAD`      | Delegated    | Read privileged access to Azure AD                  | Yes |
+| Microsoft Graph  | `PrivilegedAccess.Read.AzureAD`      | Application  | Read privileged access to Azure AD roles            | Yes |
+| Microsoft Graph  | `PrivilegedAccess.Read.AzureADGroup` | Delegated    | Read privileged access to Azure AD groups           | Yes |
+| Microsoft Graph  | `PrivilegedAccess.Read.AzureADGroup` | Application  | Read privileged access to Azure AD groups           | Yes |
+| Microsoft Graph  | `PrivilegedAccess.ReadWrite.AzureAD` | Delegated    | Read and write privileged access to Azure AD        | Yes |
+| Microsoft Graph  | `PrivilegedAccess.ReadWrite.AzureAD` | Application  | Read and write privileged access to Azure AD roles  | Yes |
+| Microsoft Graph  | `PrivilegedAccess.ReadWrite.AzureADGroup` | Delegated | Read and write privileged access to Azure AD groups | Yes |
+| Microsoft Graph  | `PrivilegedAccess.ReadWrite.AzureADGroup` | Application | Read and write privileged access to Azure AD groups | Yes |
+| Microsoft Graph  | `RoleManagement.ReadWrite.Directory` | Application  | Read and write all directory RBAC settings          | Yes |
+| Microsoft Graph  | `User.Read`                          | Delegated    | Sign in and read user profile                       | No |
+
 
 ### Step 1: Create Power Automate Flow
 
@@ -247,7 +281,7 @@ Power Automate integration enables automated approval workflows and enhanced not
 
 **If Approved:**
 - Add action: **"Send an email (V2)"** to notify the user
-- Add action: **"HTTP"** to call Azure PIM API for actual approval (advanced)
+- Add action: **"HTTP"** to call Entra ID PIM API for actual approval (advanced)
 
 **If Denied:**
 - Add action: **"Send an email (V2)"** to notify the user of denial
@@ -294,7 +328,7 @@ $enableTeamsNotifications = $true
 # Enable/disable batching multiple role requests into single approval
 $enableBatchApprovals = $false
 
-# Azure PIM Portal URL for approvals
+# Entra ID PIM Portal URL for approvals
 $pimApprovalUrl = "https://portal.azure.com/?Microsoft_Azure_PIMCommon=true#view/Microsoft_Azure_PIMCommon/ApproveRequestMenuBlade/~/aadmigratedroles"
 ```
 
@@ -318,7 +352,7 @@ Update `$pimApprovalUrl` if you use a different Azure portal URL or custom domai
 ### Authentication Configuration (Lines 553-565)
 
 ```powershell
-# Azure AD Application Configuration
+# Entra ID Application Configuration
 $clientId = "bf34fc64-bbbc-45cb-9124-471341025093"  # Microsoft Graph PowerShell
 $tenantId = "common"  # Works for all tenants
 $claimsJson = '{"access_token":{"acrs":{"essential":true,"value":"c1"}}}'  # MFA enforcement
@@ -363,7 +397,7 @@ $scopesDelegated = @(
 
 #### **No Eligible Roles Found**
 - **Cause**: No PIM role assignments or roles already active
-- **Solution**: Check Azure Portal → PIM → My Roles for eligible assignments
+- **Solution**: Check Entra Portal → PIM → My Roles for eligible assignments
 
 ### Webhook Testing
 

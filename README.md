@@ -105,78 +105,168 @@ irm https://github.com/markorr321/PIM-Global-MST/raw/main/install.ps1 | iex
 ## 🧠 Example Workflow
 
 ### 🟢 Launch the Tool
-![PIM Global Branding](images/PIM-Final.png)
-
-### 👤 Account Selection
-![Account Selection](images/PIM%20-%20Account%20Selection.png)
-
-### 🔑 Passkey Authentication
-![Device Selection](images/PIM%20-%20Device%20Selection.png)
-
-### 📷 QR Code Verification
-![QR Code Verification](images/PIM%20-%20QR%20Code%20Verification.png)
-
-### ✅ MFA Confirmation
-![Final MFA](images/PIM%20-%20Final%20MFA.png)
-
-### 🎭 Role Selection
-![Role Selection](images/PIM%20-%20Role%20Selection.png)
-
-### 🧾 Role Configuration
-![Enter Role Number](images/PIM%20-%20Enter%20Role%20Number.png)
-
-### ⏳ Duration Selection
-![Enter Activation Duration](images/PIM%20-%20Enter%20Activation%20Duration.png)
-
-### 📝 Justification
-![Enter Reason](images/PIM%20-%20Enter%20reason%20for%20activation.png)
-
-### 🖥️ Script Interaction
-![Manual Script Interaction](images/PIM%20-%20Manual%20Script%20Interaction.png)
 
 ---
 
+### 👤 Account Selection
+![Account Selection](images/PIM-MST-Images/Step%201%20-%20Accout%20Selection.png)
+
+---
+
+### 🔑 Passkey Authentication
+![Passkey Authentication](images/PIM-MST-Images/Step%202%20-%20Passkey%20Selection.png)
+
+---
+
+### 📷 QR Code Verification
+![QR Code Verification](images/PIM-MST-Images/Step%203%20-%20QR%20Code%20Capture.png)
+
+---
+
+### ✅ MFA Confirmation
+![MFA Confirmation](images/PIM-MST-Images/Step%204%20-%20Device%20Connection%20Notification.png)
+
+---
+
+### 🎭 Role Selection
+![Role Selection](images/PIM-MST-Images/Step%205%20-%20Role%20Selection.png)
+
+---
+
+### 🧾 Role Configuration
+![Role Configuration](images/PIM-MST-Images/Step%206%20-%20Enter%20the%20Selected%20Roles.png)
+
+---
+
+### ⏳ Duration Selection
+![Duration Selection](images/PIM-MST-Images/Step%207%20-%20Enter%20Duration.png)
+
+---
+
+### 📝 Justification
+![Justification](images/PIM-MST-Images/Step%208%20-%20Justification.png)
+
+---
+
+### 🖥️ Role Activation Request Submitted!
+![Role Activation Request Submitted](images/PIM-MST-Images/Step%209%20-%20Request%20Submitted.png)
+
+---
+
+## ➕ Additional Activations
+![Additional Activations](images/PIM-MST-Images/Step%2010%20-%20Additonal%20Activation.png)
+
+---
+
+## 🚪 Exit the Application
+![Exit the Application](images/PIM-MST-Images/Step%2011%20-%20Exit%20Terminal.png)
+
+
+---
+
+## 📩 Microsoft Teams Approval Workflow
+
+In addition to the in-terminal role activation process, requests can also be handled through Microsoft Teams for a more collaborative and transparent approval process.  
+This workflow leverages **Teams channels**, **Adaptive Cards**, and built-in approval notifications to streamline role activation, making it easy for managers and requestors to track the status without leaving Teams.
+
+---
+
+### 🗂️ Navigate to the Channel
+![Navigate to the Channel](images/PIM-MST-Images/Approval%20Step%201.png)
+
+---
+
+### 📝 Adaptive Card Example
+![Adaptive Card Example](images/PIM-MST-Images/Approval%20Step%202.png)
+
+---
+
+### ✍️ Enter the Approval Notification
+![Enter the Approval Notification](images/PIM-MST-Images/Approval%20Step%203.png)
+
+---
+
+### 📌 Posted for Approval (Cannot Be Modified)
+![Posted for Approval](images/PIM-MST-Images/Approval%20Step%204.png)
+
+---
+
+### 🔔 Notification for the Requestor
+![Notification for the Requestor](images/PIM-MST-Images/Approval%20Step%205.png)
+
+
 ## 🛑 Deactivation Workflow
 
+### 🛡️ Why Prompt Deactivation Matters
+As administrators, our privileged accounts grant elevated access to critical systems, sensitive data, and high-impact configurations.  
+Leaving these roles active after completing a task — or while not actively engaged — increases the **attack surface** for malicious actors.  
+
+By **promptly deactivating** elevated roles:  
+- **🔒 Reduce Risk Exposure** – Limit the time window in which credentials could be exploited if compromised.  
+- **📉 Minimize Insider Threat Potential** – Prevent accidental or unauthorized changes during idle periods.  
+- **📊 Strengthen Audit Readiness** – Demonstrate adherence to least privilege and just-in-time access principles.  
+- **⚡ Improve Operational Discipline** – Encourage a culture where elevated access is temporary, purposeful, and monitored.  
+
+This proactive approach directly improves your organization’s **security posture** while ensuring compliance with modern **identity governance best practices**.
+
+---
+
 ### **Intelligent Role Deactivation**
-PIM-Global-MST automatically detects active roles and provides a streamlined deactivation process:
+PIM-Global-MST automatically detects active roles and provides a streamlined deactivation process.
+
+---
 
 ### **Key Features**
-- **🔍 Active Role Detection** - Automatically scans and identifies currently active PIM roles
-- **📋 Bulk Deactivation** - Deactivate multiple active roles simultaneously  
-- **📝 Justification Tracking** - Required justification for all deactivation actions
-- **📱 Teams Notifications** - Sends deactivation notifications to configured Teams channels
-- **🔄 Session Continuity** - Deactivate roles without re-authentication in the same session
-- **⚡ Smart Filtering** - Only shows roles that can be deactivated (excludes permanent assignments)
+- **🔍 Active Role Detection** - Automatically scans and identifies currently active PIM roles.
+- **📋 Bulk Deactivation** - Deactivate multiple active roles simultaneously.  
+- **📝 Justification Tracking** - Required justification for all deactivation actions.
+- **🔄 Session Continuity** - Deactivate roles without re-authentication in the same session.
+- **⚡ Smart Filtering** - Only shows roles that can be deactivated (excludes permanent assignments).
+
+---
 
 ### **Deactivation Process**
-1. **Launch the tool** - Run `PIM-Global-MST.exe` or the PowerShell script
-2. **Authentication** - Complete MFA authentication (one-time per session)
-3. **Active Role Detection** - Tool automatically scans for active PIM role assignments
-4. **Role Selection** - Choose which active roles to deactivate (supports multi-select)
-5. **Justification** - Provide reason for deactivation (required for audit compliance)
-6. **Confirmation** - Review selections and confirm deactivation
-7. **Teams Notification** - Automatic notification sent to configured Teams channels
+
+#### 1️⃣ Account Selection
+![Account Selection](images/PIM-MST-Images/Deactivation%20Workflow/Dactivation%20Step%201%20-%20Account%20Selection.png)
+
+#### 2️⃣ Passkey Sign-In
+![Passkey Sign-In](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%202%20-%20Passkey%20Sigin.png)
+
+#### 3️⃣ QR Code Verification
+![QR Code Verification](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%203%20-%20QR%20Code%20Selection.png)
+
+#### 4️⃣ Device Connection
+![Device Connection](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%204%20-%20Device%20Connection.png)
+
+#### 5️⃣ Active Role Retrieval
+![Active Role Retrieval](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%205%20-%20Active%20Role%20Retrieval.png)
+
+#### 6️⃣ Confirm Deactivation Prompt
+![Confirm Deactivation Prompt](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%206%20-%20Enter%20Yes.png)
+
+#### 7️⃣ Role Selection
+![Role Selection](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%207%20-%20Role%20Selection.png)
+
+#### 8️⃣ Enter Justification
+![Enter Justification](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%208%20-%20Enter%20Justification.png)
+
+#### 9️⃣ Deactivate Roles
+![Deactivate Roles](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%209%20-%20Deactivate%20the%20Roles.png)
+
+#### 🔟 Role Management
+![Role Management](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%2010%20-%20Role%20Management.png)
+
+#### 1️⃣1️⃣ Close the Application
+![Close the Application](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%2011%20-%20Close%20the%20Application.png)
+
+---
 
 ### **Deactivation Workflow Benefits**
-- **🛡️ Security Compliance** - Ensures roles are deactivated when no longer needed
-- **📊 Audit Trail** - Complete justification and timestamp logging
-- **⏱️ Time Savings** - Bulk operations reduce administrative overhead  
-- **🔔 Transparency** - Teams notifications keep stakeholders informed
-- **🎯 Precision** - Only shows roles that can actually be deactivated
-
-### **Example Deactivation Scenario**
-```
-🔍 Detected Active Roles:
-[1] Global Administrator (Expires: 2025-01-15 3:00 PM)
-[2] Security Administrator (Expires: 2025-01-15 5:30 PM)
-[3] User Administrator (Expires: 2025-01-15 4:15 PM)
-
-Selection: 1,3
-Justification: Project completed - no longer need elevated access
-✅ Successfully deactivated 2 roles
-📱 Teams notification sent to #pim-notifications
-```
+- **🛡️ Security Compliance** - Ensures roles are deactivated when no longer needed.
+- **📊 Audit Trail** - Complete justification and timestamp logging.
+- **⏱️ Time Savings** - Bulk operations reduce administrative overhead.  
+- **🎯 Precision** - Only shows roles that can actually be deactivated.
 
 ---
 
@@ -236,7 +326,7 @@ This tool implements enterprise-grade security:
 - Color-coded console output for better readability
 - Comprehensive error messages with suggested solutions
 - Graceful fallback when Teams integration isn't configured
-- Real-time API synchronization with Azure PIM
+- Real-time API synchronization with Entra ID PIM
 
 ---
 
@@ -253,7 +343,7 @@ This tool implements enterprise-grade security:
 - The tool checks common installation paths automatically
 
 **No eligible roles found**
-- Verify you have PIM role assignments in Azure Portal → PIM → My Roles
+- Verify you have PIM role assignments in Entra ID → PIM → My Roles
 - Check that roles aren't already active
 
 📖 **[Full Troubleshooting Guide](CONFIGURATION.md#troubleshooting)**
