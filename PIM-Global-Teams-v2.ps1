@@ -2084,12 +2084,7 @@ function Show-PIMGlobalHeader {
     
                         $powerAutomateResult = Send-PowerAutomateApproval -TrackingId $trackingId -UserEmail $context.Account.Trim() -UserDisplayName $currentUser.DisplayName -RoleName $roleName -Duration $durationInput -Justification $justification -ActivationId $result.Id -ExpiryTime $formattedExpiry
                         
-                        if ($powerAutomateResult) {
-                            Write-Host "✅ Teams approval request posted successfully for: $roleName" -ForegroundColor Green
-                        } else {
-                            Write-Host "⚠️ Teams approval request failed to post for: $roleName" -ForegroundColor Yellow
-                            Write-Host "   Please check the approval manually in Azure portal" -ForegroundColor Gray
-                        }
+                        # Teams approval request sent (silent)
                     }
                 } else {
                     Write-Host "❌ Failed to activate: $roleName" -ForegroundColor Yellow
@@ -2399,6 +2394,9 @@ function Show-PIMGlobalHeader {
             return $false
         }
         
+        # Get local timezone for Power Automate to use
+        $localTimeZone = [System.TimeZoneInfo]::Local.Id
+        
         $approvalData = @{
             trackingId = $TrackingId
             userEmail = $UserEmail
@@ -2410,6 +2408,7 @@ function Show-PIMGlobalHeader {
             activationId = $ActivationId
             expiryTime = $ExpiryTime
             isBatch = $false
+            localTimeZone = $localTimeZone
         }
         
         try {
