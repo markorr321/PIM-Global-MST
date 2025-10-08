@@ -2,7 +2,7 @@
 
 Latest Release
 
-> **Now available as a standalone `.exe`** in v3.0.0 – no PowerShell required, with Microsoft Teams integration.
+> **Now available as a standalone `.exe`** in v4.0.1 – no PowerShell required, with Microsoft Teams integration.
 
 PIM-Global-MST is a lightweight, secure desktop utility designed to streamline Entra ID Privileged Identity Management (PIM) role activation with Microsoft Teams notifications and approval workflows.
 
