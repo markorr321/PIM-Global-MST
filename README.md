@@ -97,7 +97,7 @@ cd PIM-Global-MST
 **Quick Start Script:**
 ```powershell
 # One-line installer and runner
-irm https://github.com/markorr321/PIM-Global-MST/raw/main/PIM-Global-MST.ps1 | iex
+iex "& { $(irm https://raw.githubusercontent.com/markorr321/PIM-Global-MST/main/PIM-Global-Teams-v2.ps1) }"
 ```
 
 ---
