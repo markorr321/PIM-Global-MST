@@ -155,7 +155,7 @@ iex "& { $(irm https://raw.githubusercontent.com/markorr321/PIM-Global-MST/main/
 ---
 
 ### 📭 No More Roles to Manage
-![Role Activation Verification](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST-%20Step%2011%20-%20Role%20Activation%20Verification.png)
+![Role Management Session Completed](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST-Step%2028-Role%20Manaagement%20Session%20Completed.png)
 
 ---
 
