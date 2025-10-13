@@ -139,37 +139,28 @@ iex "& { $(irm https://raw.githubusercontent.com/markorr321/PIM-Global-MST/main/
 
 ---
 
-### 🧾 Role Configuration
-![Role Configuration](images/PIM-MST-Images/Step%206%20-%20Enter%20the%20Selected%20Roles.png)
-
----
-
 ### ⏳ Duration Selection
-![Duration Selection](images/PIM-MST-Images/Step%207%20-%20Enter%20Duration.png)
+![Duration Entry](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST-%20Step%208%20-%20Duration%20Entry.png)
 
 ---
 
 ### 📝 Justification
-![Justification](images/PIM-MST-Images/Step%208%20-%20Justification.png)
+![Reason for Activation](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST%20-%20Step%209%20-%20Reason%20for%20Activation.png)
 
 ---
 
 ### ⚡ Activating Role
+![Role Activation Submission](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST%20-%20Step%2010%20-%20Role%20Activation%20Submission.png)
 
 ---
 
 ### 📭 No More Roles to Manage
+![Role Activation Verification](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST-%20Step%2011%20-%20Role%20Activation%20Verification.png)
 
 ---
 
 ## ➕ Additional Activations
-![Additional Activations](images/PIM-MST-Images/Step%2010%20-%20Additonal%20Activation.png)
-
----
-
-## 🚪 Exit the Application
-![Exit the Application](images/PIM-MST-Images/Step%2011%20-%20Exit%20Terminal.png)
-
+![No More Role Management](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST-%20Step%2012%20-%20No%20More%20Role%20Management.png)
 
 ---
 
