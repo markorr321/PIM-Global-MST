@@ -236,7 +236,7 @@ PIM-Global-MST automatically detects active roles and provides a streamlined dea
 
 
 ### 🧭 Workflow Selection
-
+![Deactivation Workflow - Choose Workflow](images/PIM-MST-Images/Deactivation%20Workflow%2010132025/Step%201%20-%20PIM-Global-MST%20-%20Deactivation%20Workflow%20-%20Choose%20Workflow.png)
 
 ### 🛑 Role Selection (Deactivation)
 
