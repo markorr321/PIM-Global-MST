@@ -159,11 +159,6 @@ iex "& { $(irm https://raw.githubusercontent.com/markorr321/PIM-Global-MST/main/
 
 ---
 
-## ➕ Additional Activations
-![No More Role Management](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST-%20Step%2012%20-%20No%20More%20Role%20Management.png)
-
----
-
 ## 📩 Microsoft Teams Approval Workflow
 
 In addition to the in-terminal role activation process, requests can also be handled through Microsoft Teams for a more collaborative and transparent approval process.  
