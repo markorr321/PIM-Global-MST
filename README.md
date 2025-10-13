@@ -192,36 +192,6 @@ This workflow leverages **Teams channels**, **Adaptive Cards**, and built-in app
 
 ## 🛑 Deactivation Workflow
 
-### 🛡️ Why Prompt Deactivation Matters
-As administrators, our privileged accounts grant elevated access to critical systems, sensitive data, and high-impact configurations.  
-Leaving these roles active after completing a task — or while not actively engaged — increases the **attack surface** for malicious actors.  
-
-By **promptly deactivating** elevated roles:  
-- **🔒 Reduce Risk Exposure** – Limit the time window in which credentials could be exploited if compromised.  
-- **📉 Minimize Insider Threat Potential** – Prevent accidental or unauthorized changes during idle periods.  
-- **📊 Strengthen Audit Readiness** – Demonstrate adherence to least privilege and just-in-time access principles.  
-- **⚡ Improve Operational Discipline** – Encourage a culture where elevated access is temporary, purposeful, and monitored.  
-
-This proactive approach directly improves your organization’s **security posture** while ensuring compliance with modern **identity governance best practices**.
-
----
-
-### **Intelligent Role Deactivation**
-PIM-Global-MST automatically detects active roles and provides a streamlined deactivation process.
-
----
-
-### **Key Features**
-- **🔍 Active Role Detection** - Automatically scans and identifies currently active PIM roles.
-- **📋 Bulk Deactivation** - Deactivate multiple active roles simultaneously.  
-- **📝 Justification Tracking** - Required justification for all deactivation actions.
-- **🔄 Session Continuity** - Deactivate roles without re-authentication in the same session.
-- **⚡ Smart Filtering** - Only shows roles that can be deactivated (excludes permanent assignments).
-
----
-
-## 🛑 Deactivation Workflow
-
 ### **Intelligent Role Deactivation**
 PIM-Global-MST automatically detects active roles and provides a streamlined deactivation process:
 
@@ -242,8 +212,7 @@ PIM-Global-MST automatically detects active roles and provides a streamlined dea
 ![Deactivation Workflow - Multi Role Deactivation](images/PIM-MST-Images/Deactivation%20Workflow%2010132025/Step%203%20-%20PIM-Global-MST%20-%20Deactivation%20Workflow%20-%20Multi%20Role%20Deactivation.png)
 
 ### ✔️ Role Deactivation Successful
-
-
+![Deactivation Workflow - Thank You Messaging](images/PIM-MST-Images/Deactivation%20Workflow%2010132025/Step%205%20-%20PIM-Global-MST%20-%20Deactivation%20Workflow%20-%20Thank%20You%20Messaging.png)
 
 ---
 
