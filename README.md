@@ -220,40 +220,32 @@ PIM-Global-MST automatically detects active roles and provides a streamlined dea
 
 ---
 
-### **Deactivation Process**
+## 🛑 Deactivation Workflow
 
-#### 1️⃣ Account Selection
-![Account Selection](images/PIM-MST-Images/Deactivation%20Workflow/Dactivation%20Step%201%20-%20Account%20Selection.png)
+### **Intelligent Role Deactivation**
+PIM-Global-MST automatically detects active roles and provides a streamlined deactivation process:
 
-#### 2️⃣ Passkey Sign-In
-![Passkey Sign-In](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%202%20-%20Passkey%20Sigin.png)
+### **Key Features**
+- **🔍 Active Role Detection** - Automatically scans and identifies currently active PIM roles
+- **📋 Bulk Deactivation** - Deactivate multiple active roles simultaneously  
+- **📝 Justification Tracking** - Required justification for all deactivation actions
+- **📊 Audit Logging** - Complete justification and timestamp tracking
+- **🔄 Session Continuity** - Deactivate roles without re-authentication in the same session
+- **⚡ Smart Filtering** - Only shows roles that can be deactivated (excludes permanent assignments)
 
-#### 3️⃣ QR Code Verification
-![QR Code Verification](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%203%20-%20QR%20Code%20Selection.png)
 
-#### 4️⃣ Device Connection
-![Device Connection](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%204%20-%20Device%20Connection.png)
 
-#### 5️⃣ Active Role Retrieval
-![Active Role Retrieval](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%205%20-%20Active%20Role%20Retrieval.png)
+### 🧭 Workflow Selection
 
-#### 6️⃣ Confirm Deactivation Prompt
-![Confirm Deactivation Prompt](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%206%20-%20Enter%20Yes.png)
 
-#### 7️⃣ Role Selection
-![Role Selection](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%207%20-%20Role%20Selection.png)
+### 🛑 Role Selection (Deactivation)
 
-#### 8️⃣ Enter Justification
-![Enter Justification](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%208%20-%20Enter%20Justification.png)
 
-#### 9️⃣ Deactivate Roles
-![Deactivate Roles](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%209%20-%20Deactivate%20the%20Roles.png)
+### ✔️ Role Deactivation Successful
 
-#### 🔟 Role Management
-![Role Management](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%2010%20-%20Role%20Management.png)
 
-#### 1️⃣1️⃣ Close the Application
-![Close the Application](images/PIM-MST-Images/Deactivation%20Workflow/Deactivation%20Step%2011%20-%20Close%20the%20Application.png)
+### 📭 No More Workflows Available
+
 
 ---
 
