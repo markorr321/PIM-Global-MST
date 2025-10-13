@@ -140,7 +140,7 @@ iex "& { $(irm https://raw.githubusercontent.com/markorr321/PIM-Global-MST/main/
 ---
 
 ### ⏳ Duration Selection
-![Duration Entry](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST-%20Step%208%20-%20Duration%20Entry.png)
+
 
 ---
 
