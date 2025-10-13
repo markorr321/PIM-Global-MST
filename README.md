@@ -110,27 +110,32 @@ iex "& { $(irm https://raw.githubusercontent.com/markorr321/PIM-Global-MST/main/
 ---
 
 ### 👤 Account Selection
-![Account Selection](images/PIM-MST-Images/Activation%20Workflow/Step%201%20-%20Accout%20Selection.png)
+![Account Selection](images/PIM-MST-Images/Activation%20Workflow/Step%201%20-%20PIM-Global-MST%20-%20Account%20Selection.png)
 
 ---
 
 ### 🔑 Passkey Authentication
-![Passkey Authentication](images/PIM-MST-Images/Step%202%20-%20Passkey%20Selection.png)
+![Choose your Passkey](images/PIM-MST-Images/Activation%20Workflow/Step%202%20-%20PIM-Global-MST%20-%20Choose%20your%20Passkey.png)
 
 ---
 
 ### 📷 QR Code Verification
-![QR Code Verification](images/PIM-MST-Images/Step%203%20-%20QR%20Code%20Capture.png)
+![QR Code Capture](images/PIM-MST-Images/Activation%20Workflow/Step%203%20-%20PIM-Global-MST%20-%20QR%20Code%20Capture.png)
 
 ---
 
 ### ✅ MFA Confirmation
-![MFA Confirmation](images/PIM-MST-Images/Step%204%20-%20Device%20Connection%20Notification.png)
+![Authentication Success Messaging](images/PIM-MST-Images/Activation%20Workflow/Step%204%20-%20PIM-Global-MST%20-%20Authentication%20Success%20Messaging.png)
+
+---
+
+### ⚙️ Workflow Selection
+![Choose Action](images/PIM-MST-Images/Activation%20Workflow/Step%205%20-%20PIM-Global-MST%20-%20Choose%20Action.png)
 
 ---
 
 ### 🎭 Role Selection
-![Role Selection](images/PIM-MST-Images/Step%205%20-%20Role%20Selection.png)
+![Multi Role Selection](images/PIM-MST-Images/Activation%20Workflow/Step%206%20-%20PIM-Global-MST%20-%20Multi%20Role%20Selection.png)
 
 ---
 
@@ -149,8 +154,11 @@ iex "& { $(irm https://raw.githubusercontent.com/markorr321/PIM-Global-MST/main/
 
 ---
 
-### 🖥️ Role Activation Request Submitted!
-![Role Activation Request Submitted](images/PIM-MST-Images/Step%209%20-%20Request%20Submitted.png)
+### ⚡ Activating Role
+
+---
+
+### 📭 No More Roles to Manage
 
 ---
 
