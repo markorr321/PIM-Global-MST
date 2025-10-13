@@ -2010,6 +2010,7 @@ function Show-PIMGlobalHeader {
             
         } while ($true)
     
+        Write-Host ""
         # Justification input
         $justification = Read-PIMInput -Prompt "Enter reason for activation" -ControlsText $script:ControlMessages['Input']
         
