@@ -140,17 +140,17 @@ iex "& { $(irm https://raw.githubusercontent.com/markorr321/PIM-Global-MST/main/
 ---
 
 ### ⏳ Duration Selection
-
+![Duration Entry](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST-%20Step%2025%20-%20Duration%20Entry.png)
 
 ---
 
 ### 📝 Justification
-![Reason for Activation](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST%20-%20Step%209%20-%20Reason%20for%20Activation.png)
+![Justification](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST-26-Justification.png)
 
 ---
 
 ### ⚡ Activating Role
-![Role Activation Submission](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST%20-%20Step%2010%20-%20Role%20Activation%20Submission.png)
+![Role Activation](images/PIM-MST-Images/Activation%20Workflow/PIM-Global-MST-Step%2027-Role%20Activation.png)
 
 ---
 
