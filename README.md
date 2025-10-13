@@ -106,10 +106,11 @@ iex "& { $(irm https://raw.githubusercontent.com/markorr321/PIM-Global-MST/main/
 
 ### 🟢 Launch the Tool
 
+
 ---
 
 ### 👤 Account Selection
-![Account Selection](images/PIM-MST-Images/Step%201%20-%20Accout%20Selection.png)
+![Account Selection](images/PIM-MST-Images/Activation%20Workflow/Step%201%20-%20Accout%20Selection.png)
 
 ---
 
