@@ -1533,8 +1533,9 @@ function Show-PIMGlobalHeader {
         $promptLeft = [Console]::CursorLeft
         $promptTop = [Console]::CursorTop
         
-        # Show control bar below the prompt
+        # Show control bar below the prompt with spacing
         Write-Host ""  # Move to next line
+        Write-Host ""  # Add blank line for spacing
         Write-Host $ControlsText -ForegroundColor Magenta
         $script:LastControlBarLine = [Console]::CursorTop - 1
         
@@ -2010,7 +2011,6 @@ function Show-PIMGlobalHeader {
             
         } while ($true)
     
-        Write-Host ""
         # Justification input
         $justification = Read-PIMInput -Prompt "Enter reason for activation" -ControlsText $script:ControlMessages['Input']
         
